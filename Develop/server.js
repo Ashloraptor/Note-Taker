@@ -9,9 +9,11 @@ const app = express();
 const PORT = process.env.port || 3001;
 
 // res.json() allows us to return JSON instead of a buffer, string, or static file
-app.get('/api/notes', (req, res) => res.json(noteData));
+//app.get('/api/notes', (req, res) => res.json(noteData));
+app.use(express.json());
+app.use('/api', api);
 
-app.get('/', (req, res) => res.notes('Navigate to /notes'));
+app.get('/', (req, res) => res.send('Navigate to /notes'));
 
 // GET Route for homepage
 app.get('/', (req, res) =>
