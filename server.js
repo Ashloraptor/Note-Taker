@@ -50,7 +50,7 @@ app.use('/', htmlRoutes);
 
 //404 page catch
 app.get('*', (res, req) =>
-res.sendFile(path.join(__dirname, 'public/pages/404.html'))
+res.sendFile(path.join(__dirname, './public/pages/404.html'))
 );
 
 app.listen(PORT, () =>
