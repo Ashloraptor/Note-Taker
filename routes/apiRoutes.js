@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const util = require('../db/utils');
-// Get all notes
+//Get all notes
 router.get('/notes', (req, res) => {
   util
     .getNotes()
@@ -15,7 +15,7 @@ router.post('/notes', (req, res) => {
     .then((note) => res.json(note))
     .catch((err) => res.status(500).json(err));
 });
-// delete note  by id
+//Delete note by id
 router.delete('/notes/:id', (req, res) => {
   util
     .removeNote(req.params.id)

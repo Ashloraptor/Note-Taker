@@ -20,38 +20,11 @@ app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
 
-
-
-
-
-
-
-// Create Express.js routes for default '/', '/send' and '/routes' endpoints
-//app.get('/', (req, res) => res.send('Navigate to /index or /notes'));
-
-
-//End of example assignment 1
-
-//Does this connect to other necessary files within the program?
-// const noteData = require('./db/db.json');
-// const api = require('public/assets/js/index.js');
-
-
-
-// // res.json() allows us to return JSON instead of a buffer, string, or static file
-//app.get('/api', (req, res) => res.json(noteData));
-// app.use(express.json());
-// //"it looks to me as though it's where the "routes" will be specified"
-// app.use('/api', api);
-
-// app.get('/', (req, res) => res.send('Navigate to /notes'));
-
-
-
 //404 page catch
 app.get('*', (res, req) =>
 res.sendFile(path.join(__dirname, './public/pages/404.html'))
 );
+
 
 app.listen(process.env.PORT || 3002
 );

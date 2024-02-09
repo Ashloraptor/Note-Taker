@@ -1,21 +1,7 @@
 # Note-Taker
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
-# Acceptance Criteria
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a "Save Note" button and a "Clear Form" button appear in the navigation at the top of the page
-WHEN I click on the Save button
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes and the buttons in the navigation disappear
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column and a "New Note" button appears in the navigation
-WHEN I click on the "New Note" button in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
+Note-Taker allows the user to write and save notes. This application saves to a database rather than local storage. Simply give your note a title and a little text and select save. The user can also delete notes previously saved, individually or by clearing all of them at once.
 
-<img width="429" alt="image" src="https://github.com/Ashloraptor/Note-Taker/assets/148083732/5bbffea5-a8cd-4df5-ba72-6839eed746f5">
+<img width="544" alt="image" src="https://github.com/Ashloraptor/Note-Taker/assets/148083732/55913d60-4512-47ce-b856-49a093a212c2">
+
+<img width="542" alt="image" src="https://github.com/Ashloraptor/Note-Taker/assets/148083732/f3c99038-fd83-4c08-8901-2b4aacfda2c2">
